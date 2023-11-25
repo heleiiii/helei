@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>云顶作业</title>
+	<style>
+		.container {
+			position: relative;
+			text-align: center;
+		}
+		.text-over-image {
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+		.text-over-image a {
+			color: white;
+			text-decoration: none;
+			padding: 5px 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+		/*.text-over-image img{
+			width: 140px;
+			height: 45px;
+			background-color: red;
+			object-fit: cover;*/
+		}
+		.text-over-image a:nth-child(2) {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.text-over-image a:nth-child(3) {
+			position: absolute;
+			bottom: 50%;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+		.text-over-image a:nth-child(4) {
+			position: absolute;
+			left: 35%;
+		}
+		.text-over-image a:nth-child(5) {
+			position: absolute;
+			right: 35%;
+		}
+		*{
+			margin: 0;
+		}
+		.header{
+			width: 100%;
+			height: 400px;
+			position: relative;
+			background-color: antiquewhite;
+		}
+		.header_flex{
+			width: 700px;
+			height: 75px;
+			position: relative;
+			left: 27%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.background{
+			position: relative;
+			background-color: whitesmoke;
+			top: 40px;
+			width: 100%;
+			height: 500px;
+		}
+		.welcome{
+			position: relative;
+			top: 50px;
+			left: 27%;
+			width: 900px;
+			height: 500px;
+		    display: flex;
+		    flex-direction: row;
+		}
+		.welcome_img{
+			width: 300px;
+			height: 300px;
+		}
+		.welcome_textarea{
+			position: relative;
+			left: 10%;
+			width: 500px;
+			height: 520px;
+			background-color: white;
+		}
+		.title{
+			position: relative;
+			top: 10px;
+			left: 10%;
+			width: 200px;
+			height: 25px;
+		}
+		.text{
+			position: relative;
+			top: 30px;
+			left: 10%;
+			width: 430px;
+			height: 200px;
+		}
+		.welcome_video{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 130px;
+			bottom: -50px;
+			background-color: rgba(255, 0, 90, 0.6);
+			width: 300px;
+			height: 180px;
+		}
+		.lamy_series{
+			position: relative;
+			top: 200px;
+			left: 18%;
+			width: 1000px;
+			height: 500px;
+		}
+		.lamy_series_title{
+			position: relative;
+			top: 0px;
+			left: 43%;
+			width: 200px;
+			height: 50px;
+		}
+		.lamy_series_flex{
+			position: relative;
+			top: 60px;
+			width: 100%;
+			height: 150px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.lamy_box{
+			width: 200px;
+			height: 150px;
+		}
+		.lamy_series_button{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 390px;
+			left: 35%;
+			width: 200px;
+			height: 25<br><br>px;
+		}
+		.photo{
+			position: relative;
+			left: 20%;
+			background-color: red;
+			top: 150px;
+			width: 100px;
+			height: 100px;
+		}
+		.area{
+			position: relative;
+			background-color: gray;
+			top: 250px;
+			width: 100%;
+			height: 200px;
+			left: 0px;
+		}
+		.character{
+			position: relative;
+			left: 45%;
+			top: 40px;
+		}
+		.thoughts{
+			position: relative;
+			background-color: white;
+			width: 600px;
+			left: 30%;
+			top: 50px;
+		}
+		.head_portrait{
+			position: relative;
+			width: 80px;
+			left: 250px;
+			top: 30px;
+		}
+	    .context{
+	    	position: relative;
+	    	top: 55px;
+	    }
+	    .hodgepodge{
+	    	position: relative;
+	    	height: 900px;
+	    	top: 400px;
+	    }
+	    .character1{
+	    	position: relative;
+	    	top: 120px;
+	    	height: 80px;
+	    	width: 200px;
+	    	left: 47%;
+	    }
+	    .photo1{
+	    	position: relative;
+	    	width: 265px;
+	    	height: 250px;
+	    	top: 100px;
+	    	left: 20%;
+	    }
+	    .photo2{
+	    	position: relative;
+	    	top: -150px;
+	    	width: 265px;
+	    	left: 40%;
+	    }
+	    .photo3{
+	    	position: relative;
+	    	top: -525px;
+	    	width: 265px;
+	    	left: 60%;
+	    }
+	    .photo4{
+	    	position: relative;
+	    	top: -500px;
+	    	width: 250px;
+	    	left: 20%;
+	    }
+	    .photo5{
+	    	position: relative;
+	    	top: -680px;
+	    	width: 250px;
+	    	left: 40%;
+	    }
+	    .photo6{
+	    	position: relative;
+	    	top: -989px;
+	    	width: 250px;
+	    	left: 60%;
+	    }
+	    .link{
+	    	position: relative;
+	    	left: 45%;
+	    	top: -939px;
+	    }
+	    .area2{
+	    	position: relative;
+	    	background-color: gray;
+	    	top: 350px;
+	    	height: 200px;
+	    }
+	    .area3{
+	    	position: relative;
+	    	background-color: white;
+	    	top: 50px;
+	    	height: 300px;
+	    	width: 900px;
+	    	left: 20%;
+	    }
+	    .text3{
+	    	position: relative;
+	    	left: 50%;
+	    	top: -340px;
+	    	background-color: white;
+	    }
+	    .link3{
+	    	position: relative;
+	    	top: -260px;
+	    	left: 45%;
+	    }
+	    .last{
+	    	position: relative;
+	    }
+	    .last_photo{
+	    	position: relative;
+	    	top: 650px;
+	    }
+	    .lastone{
+	    	position: relative;
+	    	top: 150px;
+	    	width: 400px;
+	    	height: 300px;
+	    	left: -30%;
+	    	background-color: rgba(0, 0, 0, 0);
+	    }
+	    .lastone2{
+	    	position: relative;
+	    	top: 3px;
+	    	height: 58px;
+	    	left: 22%;
+	    	background-color: red;
+	    }
+	    .lastone3{
+	    	position: relative;
+	    	left: 50%;
+	    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="images/10.png" width="1550" height="450" />
+		<div class="text-over-image">
+			<a href="#">新品推荐</a>
+			<div class="lastone2">
+			<a href="#"><img src="images/16.png" alt="15" /></a>
+			</div>
+			<div class="lastone">
+			<a href="#"><img src="images/17.png"  width="600" /></a>
+			</div>
+			<a href="#">在线购买产品</a>
+			<a href="#">企业礼包</a>
+			<a href="#">品牌介绍</a>
+		</div>
+	</div>
+	<div class="background">
+		<div class="welcome">
+			<div class="welcome_img"><img src="images/1.png"></div>
+			<div class="welcome_textarea">
+				<div class="title">
+					<h3 style="font-size: 40; font-family: 楷体;">Welcome to lamy<br><br><br><br></h3>
+				</div>
+				<div class="text">
+					德国书写品牌LAMY创始人C.Josef Lamy于1930年在海德堡创立了欧瑟斯墨水笔制造厂，1952年崭露头角的LAMY流线型墨水笔震撼问世，彰显公司创新敏锐嗅觉。1966年终于打<br><br><br><br>
+                    造出令人耳目一新的金典之作—LAMY 2000系列。产品撮合了聚碳酸酯与不锈钢材质，绝妙的搭配，使之从芸芸众生的书写工具中脱颖而出，时至今日，依然在市场具有影响力。
+				</div>
+			</div>
+			<div class="welcome_video">
+				<a href="#"><img src="images/19.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="lamy_series">
+		<div class="lamy_series_title"><strong style="font-size: 20px;">LAMY</strong>各系列</div>
+		<div class="lamy_series_flex">
+			<div class="lamy_box"><h3>【恒星系列 墨水笔 】</h3><br><br>LAMY恒星系列延续了LAMY的时尚造型，打造出锦上添花的极致品质。此系列全部均由氧化独特的凹陷式笔握以及弹性铜线笔夹富的颜色让LAMY突破了传统散发着无限的青春魅力</div>
+			<div class="lamy_box"><h3>【狩猎系列限量色墨水笔】</h3><br><br>色彩丰富，颜色亮丽，不仅是可以作为书写工具，同样是很好的装饰品宽大的笔夹设计，可随时夹在包带，牛仔裤，T恤袖口上，让你感受创意方便的携带方式笔身通体材质采用车用强力ABS材料</div>
+			<div class="lamy_box"><h3>【喜悦系列美术笔】</h3><br><br>用以绘图，写艺术字，艺术签名扁平状的笔尖设计，适合书写艺术字立体感极佳。1，1.5，1.9三种笔尖可供选择，可书写粗细不等的立体字，让您随时感受变化的乐趣复古的笔杆设计，经典又与众不同，显示出独特的欣赏品味</div>
+		</div>
+		<div class="lamy_series_button">
+			<a href="#"><h2 style="color:purple;">了解详情>></h3></a>
+		</div>
+	</div>
+	<div class="photo">
+		<img src="images/5.png" width="900">
+	</div>
+	<div class="area">
+		<h4 class="character">Form Germany<br>What people are saying</h4>
+		<div class="thoughts">
+			<div class="head_portrait"><img src="images/8.png"></a></div>
+			<div class="context">使用令人难以置信的生产技术和坚持极高水平的精准要求，仅使用一种材质，也足以成就出这款永恒的设计。产品本身是体现不同加工程序和制造工艺，手工打磨的亚光拉丝充分体现了品牌对细节的注重。</div>
+		</div>
+	</div>
+	<div class="hodgepodge">
+		<div class="character1"><h4>choose</h4>Our product</div>
+		<div class="photo1"><img src="images/2.png"></div>
+		<div class="photo2"><img src="images/7.png"></div>
+		<div class="photo3"><img src="images/3.png"></div>
+		<div class="photo4"><img src="images/6.png"></div>
+		<div class="photo5"><img src="images/12.png"></div>
+		<div class="photo6"><img src="images/14.png"></div>
+		<div class="link"><a href="#"><h2 style="color: green;">戳我速购>></h2></a></div>
+	</div>
+	<div class="area2">
+		<div class="area3">
+			<div class="photo7"><img src="images/13.png"></div>
+			<div class="photo8"><img src="images/9.png"></div>
+			<div class="photo9"><img src="images/11.png"></div>
+			<div class="text3">You make millions of decisions that is<br>mean nothing, and then one day your<br> order takesout life<br><br><br>It is said when you realise you aren`t<br>is as important to someone as you<br>thought you were<br><br><br>Love is unequal ,so don`t count how<br>much one contributions,and which is<br>more active.</div>
+			<div class="link3"><a href="#"><h2 style="color: gold;">新品推荐>></h2></a></div>
+		</div>
+	</div>
+	<div class="last">
+		<div class="last_photo"><img src="images/4.png"></div>
+		<div class="lastone3"><img src="images/21.png"></div>
+	</div>
+</body>
+</html>
