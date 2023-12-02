@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19266987",
+      "name": "左箭头圆圈",
+      "font_class": "zuojiantouyuanquan",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "19340686",
+      "name": "会员中心图标集合-19",
+      "font_class": "huiyuanzhongxintubiaojihe-19",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "25496319",
+      "name": "圆角矩形 3",
+      "font_class": "a-yuanjiaojuxing3",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "33529471",
+      "name": "面性圆圈圆圈信息",
+      "font_class": "mianxingyuanquanyuanquanxinxi",
+      "unicode": "e724",
+      "unicode_decimal": 59172
+    }
+  ]
+}

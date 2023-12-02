@@ -1,0 +1,89 @@
+body{
+	background-image: url(images/9.png);
+    background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-size: 50% 2500px;
+}
+.iconfont1 a{
+	font-size: 60px !important;
+	color: rgba(255, 255, 255, 0.5);
+}
+.iconfont2 a{
+	font-size: 60px !important;
+	color: rgba(255, 255, 255, 0.4);
+}
+.iconfont3 a{
+	font-size: 60px;
+	color: white;
+}
+div span a{
+	font-size: 120px;
+	text-decoration: none;
+}
+.sign_up{
+	font-size: 40px;
+}
+div input{
+	border: none;
+	color: white;
+	background-color: rgba(255,255,255,0);
+	/*background-color: red;*/
+	border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+	height: 40px;
+}
+div input:nth-child(4){
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+div input:nth-child(5){
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+	color: #706D9F;
+	font-size: 40px;
+}
+.Signin a{
+    font-size: 22px;
+    color: #43DFAF;
+}
+.flex3 span{
+	margin-left: 150px;
+}
+.signup input{
+	position: relative;
+	/*background-color: red;*/
+	width: 140px;
+	height: 50px;
+	left: 695px;
+	top: -125px;
+	font-size: 40px;
+	border-bottom: none;
+	color: #706D9F;
+}
+.flex{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	justify-content: space-between;
+	/*background-color: red;*/
+	width: 765px;
+	height: 80px;
+}
+.flex2{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	/*background-color: blue;*/
+	width: 765px;
+	height: 120px;
+}
+.flex3{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*background-color: black;*/
+	height: 450px;
+	width: 500px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
